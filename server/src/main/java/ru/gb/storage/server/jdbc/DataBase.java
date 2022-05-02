@@ -10,7 +10,7 @@ public final class DataBase {
 
     private static DataBase instance = null;
     private static final Logger LOG = Logger.getLogger(DataBase.class.getName());
-    FileHandler fh;
+    private FileHandler fh;
     private Connection connection;
     private Statement statement;
 
@@ -82,6 +82,21 @@ public final class DataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean checkLogin(String login) {
+        boolean res = false;
+        try(final PreparedStatement preparedStatement = connection.prepareStatement("select * from client where login = ?")) {
+            preparedStatement.setString(1, login);
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.next()) {
+                res = true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return res;
     }
 
     public void disconnect() {

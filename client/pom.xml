@@ -76,7 +76,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>ru.gb.storage.client.App</mainClass>
+                    <mainClass>ru.gb.storage.client.Init</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -88,7 +88,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <mainClass>ru.gb.storage.client.App</mainClass>
+                            <mainClass>ru.gb.storage.client.Init</mainClass>
                         </configuration>
                     </execution>
                 </executions>

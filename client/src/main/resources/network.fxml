@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="544.0" prefWidth="510.0" styleClass="panel" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.storage.client.Controller.NetworkPanel">
+    <Button fx:id="btn" defaultButton="true" layoutX="190.0" layoutY="414.0" mnemonicParsing="false" text="download" textFill="#fafafa">
+        <styleClass>
+            <String fx:value="font" />
+            <String fx:value="btn_log" />
+        </styleClass>
+    </Button>
+</AnchorPane>
