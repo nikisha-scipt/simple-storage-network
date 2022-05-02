@@ -1,0 +1,39 @@
+.reg_panel {
+    -fx-background-color: #343434;
+}
+
+.reg_text {
+    -fx-font-family: "Carlito";
+    -fx-font-size: 22;
+    -fx-text-fill: #fafafa;
+}
+.reg_input {
+    -fx-text-fill: #fafafa;
+    -fx-background-color: #343434;
+    -fx-border-color: #fafafa;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+}
+
+.reg_input:pressed {
+    -fx-text-fill: #b04ba0;
+}
+
+.reg_input:hover {
+    -fx-translate-y: -5;
+}
+
+.btn_reg {
+    -fx-background-color: #e06249;
+    -fx-text-fill: #fafafa;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+}
+
+.btn_reg:hover {
+    -fx-translate-y: -5;
+}
+
+.btn_reg:pressed {
+    -fx-background-color: #b04ba0;
+}

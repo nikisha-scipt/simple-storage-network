@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            nodeOrientation="LEFT_TO_RIGHT" prefHeight="544.0" prefWidth="510.0" styleClass="panel"
+            stylesheets="@style.css" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.storage.client.Controller.GeneralPanel">
+    <Label layoutX="229.0" layoutY="53.0" styleClass="font" stylesheets="@style.css" text="Log In"
+           textFill="#fafafa">
+        <font>
+            <Font name="Carlito" size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="loginInputGeneral" layoutX="117.0" layoutY="224.0" promptText="login" styleClass="font"/>
+    <PasswordField fx:id="passwordInputGeneral" layoutX="117.0" layoutY="328.0" promptText="password"
+                   styleClass="font"/>
+    <Button fx:id="btn" defaultButton="true" layoutX="209.0" layoutY="414.0" mnemonicParsing="false" text="Log In"
+            textFill="#fafafa">
+        <styleClass>
+            <String fx:value="font"/>
+            <String fx:value="btn_log"/>
+        </styleClass>
+    </Button>
+    <Label fx:id="regLabel" layoutX="218.0" layoutY="495.0" styleClass="reg_text"
+           stylesheets="style.css" text="Registration" textFill="#14b9eb">
+        <font>
+            <Font size="14.0"/>
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Label>
+    <Line endX="41.0" fill="#1199ee" layoutX="257.0" layoutY="516.0" startX="-46.0" stroke="#0873ff"/>
+</AnchorPane>

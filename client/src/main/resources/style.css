@@ -1,0 +1,44 @@
+.font {
+    -fx-font-family: "Carlito";
+    -fx-font-size: 22;
+    -fx-text-fill: #fafafa;
+}
+
+.panel {
+    -fx-background-color: #343434;
+    -fx-border-radius: 2500;
+}
+
+.log_in:hover {
+    -fx-rotate: -180;
+}
+
+.btn_log {
+    -fx-background-color: #e06249;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+}
+
+.btn_log:hover {
+    -fx-translate-y: -5;
+}
+
+.btn_log:pressed {
+    -fx-background-color: #b04ba0;
+}
+
+.text-input {
+    -fx-text-fill: #fafafa;
+    -fx-background-color: #343434;
+    -fx-border-color: #fafafa;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+}
+
+.reg_text:pressed {
+    -fx-text-fill: #b04ba0;
+}
+
+.reg_text:hover {
+    -fx-translate-y: -5;
+}
