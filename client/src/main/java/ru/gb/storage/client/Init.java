@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class App extends Application {
+public class Init extends Application {
 
 
     public void start(Stage stage) throws Exception {
@@ -17,7 +17,7 @@ public class App extends Application {
 
     public static void getScene(String nameScene, String nameTitle, Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(App.class.getResource(nameScene));
+        loader.setLocation(Init.class.getResource(nameScene));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         stage.setScene(scene);

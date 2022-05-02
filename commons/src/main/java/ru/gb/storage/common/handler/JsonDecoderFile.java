@@ -6,15 +6,11 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;
-import ru.gb.storage.common.message.DateMessage;
 import ru.gb.storage.common.message.Message;
-import ru.gb.storage.common.message.TextMessage;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.List;
 
-public class JsonDecoder extends MessageToMessageDecoder<ByteBuf> {
+public class JsonDecoderFile extends MessageToMessageDecoder<ByteBuf> {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
